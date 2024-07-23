@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop class="video-foreground">
+            <source src="ROSE_PETAL_Falling_Rose_background_3DMAX__CGGdFuG0fg4_137.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="banner">
+                <h1>Happy Birthday, GOLDI!</h1>
+                <p>Wishing you a day filled with love, joy, and laughter.</p>
+            </div>
+            <button class="btn" onclick="showMessage()">Click for a Surprise</button>
+            <div id="surpriseMessage" class="hidden">
+                <p>You've been working so hard for NEET, and I know you're going to crack it and get into your dream college.!</p>
+                <p>RADHE RADHE</p>
+            </div>
+        </div>
+    </div>
+    <div id="confetti-canvas"></div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.8/dist/index.min.js"></script>
+    <script>
+        // Initialize confetti
+        const confettiSettings = { target: 'confetti-canvas' };
+        const confetti = new ConfettiGenerator(confettiSettings);
+        confetti.render();
+    </script>
+</body>
+</html>
+
